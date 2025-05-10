@@ -1,3 +1,5 @@
+using EmployeesOverlap.Server.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -5,6 +7,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
+// Register services
+builder.Services.AddScoped<ICsvParser, CsvParser>();
+builder.Services.AddScoped<IOverlapCalculator, OverlapCalculator>();
+builder.Services.AddScoped<IEmployeeOverlapService, EmployeeOverlapService>();
 
 var app = builder.Build();
 
