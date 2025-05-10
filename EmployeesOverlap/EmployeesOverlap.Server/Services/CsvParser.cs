@@ -36,6 +36,12 @@ namespace EmployeesOverlap.Server.Services
                         ? DateTime.Today
                         : ParseFlexibleDate(dateToRaw);
 
+                    if (dateFrom > dateTo)
+                    {
+                        Console.WriteLine($"Skipping row due to invalid date range: DateFrom ({dateFrom}) is after DateTo ({dateTo}).");
+                        continue;
+                    }
+
                     records.Add(new WorkRecord
                     {
                         EmployeeId = employeeId,
