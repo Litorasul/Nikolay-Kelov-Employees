@@ -140,6 +140,5 @@ namespace EmployeesOverlap.Server.Tests
             Assert.Single(result);
             Assert.Equal(6, result[0].DaysWorkedTogether);
         }
-
     }
 }
