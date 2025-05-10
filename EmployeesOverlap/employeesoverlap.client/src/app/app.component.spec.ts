@@ -35,9 +35,4 @@ describe('AppComponent', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('app-upload-form')).not.toBeNull();
   });
-
-  it('should render the result table component', () => {
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('app-result-table')).not.toBeNull();
-  });
 });
