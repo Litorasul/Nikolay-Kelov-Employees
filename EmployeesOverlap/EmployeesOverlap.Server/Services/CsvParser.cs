@@ -11,7 +11,6 @@ namespace EmployeesOverlap.Server.Services
             "yyyy-MM-dd",
             "MM/dd/yyyy",
             "dd.MM.yyyy",
-            "d/M/yyyy",
             "d MMM yyyy",
             "dd MMM yyyy",
             "M/d/yyyy",
@@ -29,8 +28,8 @@ namespace EmployeesOverlap.Server.Services
             {
                 try
                 {
-                    var employeeId = int.Parse(row.Employee);
-                    var projectId = int.Parse(row.Project);
+                    var employeeId = int.Parse(row.EmpID);
+                    var projectId = int.Parse(row.ProjectID);
                     var dateFrom = ParseFlexibleDate(row.DateFrom);
                     var dateToRaw = row.DateTo?.ToString()?.Trim();
                     var dateTo = string.IsNullOrEmpty(dateToRaw) || dateToRaw.ToLower() == "null"

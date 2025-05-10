@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "employeesoverlap.client", "employeesoverlap.client\employeesoverlap.client.esproj", "{1D503A34-37D2-35D3-D7EE-9CF4D512A9C8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeesOverlap.Server", "EmployeesOverlap.Server\EmployeesOverlap.Server.csproj", "{3BA50DB4-5269-4DFF-B3D3-6020D67B7A8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeesOverlap.Server.Tests", "EmployeesOverlap.Server.Tests\EmployeesOverlap.Server.Tests.csproj", "{980336CC-42C3-4B8F-9557-FA3E89C3263C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,10 @@ Global
 		{3BA50DB4-5269-4DFF-B3D3-6020D67B7A8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BA50DB4-5269-4DFF-B3D3-6020D67B7A8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BA50DB4-5269-4DFF-B3D3-6020D67B7A8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{980336CC-42C3-4B8F-9557-FA3E89C3263C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{980336CC-42C3-4B8F-9557-FA3E89C3263C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{980336CC-42C3-4B8F-9557-FA3E89C3263C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{980336CC-42C3-4B8F-9557-FA3E89C3263C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
