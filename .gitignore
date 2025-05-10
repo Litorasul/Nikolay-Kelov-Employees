@@ -399,3 +399,20 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Angular / EmployeesOverlap.Client
+EmployeesOverlap.Client/node_modules/
+EmployeesOverlap.Client/dist/
+EmployeesOverlap.Client/.angular/
+EmployeesOverlap.Client/.output/
+EmployeesOverlap.Client/.turbo/
+EmployeesOverlap.Client/.nx/
+EmployeesOverlap.Client/.env
+EmployeesOverlap.Client/.env.local
+EmployeesOverlap.Client/.env.*.local
+EmployeesOverlap.Client/src/environments/environment*.ts  # Optional if you store secrets
+
+# Node logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
