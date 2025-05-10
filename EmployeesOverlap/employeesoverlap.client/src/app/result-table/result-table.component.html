@@ -1,0 +1,19 @@
+<table>
+  <thead>
+    <tr>
+      <th>First Employee ID</th>
+      <th>Second Employee ID</th>
+      <th>Project ID</th>
+      <th>Days Worked Together</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of data">
+      <td>{{ row.firstEmployeeId }}</td>
+      <td>{{ row.secondEmployeeId }}</td>
+      <td>{{ row.projectId }}</td>
+      <td>{{ row.daysWorkedTogether }}</td>
+    </tr>
+  </tbody>
+</table>
+

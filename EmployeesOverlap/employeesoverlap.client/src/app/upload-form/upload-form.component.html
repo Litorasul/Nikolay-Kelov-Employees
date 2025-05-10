@@ -1,0 +1,7 @@
+<form (ngSubmit)="onSubmit()" #form="ngForm">
+  <input type="file" (change)="onFileChange($event)" accept=".csv" required />
+  <button type="submit" [disabled]="!selectedFile">Upload</button>
+</form>
+
+<p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
+<app-result-table *ngIf="overlaps.length" [data]="overlaps"></app-result-table>
