@@ -9,12 +9,16 @@ namespace EmployeesOverlap.Server.Services
         private static readonly string[] SupportedDateFormats = new[]
         {
             "yyyy-MM-dd",
+            "dd-MM-yyyy",
             "MM/dd/yyyy",
             "dd.MM.yyyy",
+            "yyyy.MM.dd",
             "d MMM yyyy",
             "dd MMM yyyy",
             "M/d/yyyy",
-            "yyyy/MM/dd"
+            "yyyy/MM/dd",
+            "MMMM d yyyy",
+            "d MMMM yyyy"
         };
 
         public async Task<List<WorkRecord>> ParseAsync(Stream stream)
